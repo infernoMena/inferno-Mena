@@ -9,20 +9,20 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/crossfire-cover.png'); /* الخلفية الشفافة */
+  background-image: url('images/crossfire-cover.png'); /* الخلفية */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* إعدادات الشريط العلوي */
+/* إعدادات شريط التنقل */
 nav {
   background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
   padding: 10px 0;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* ضمان الظهور فوق المحتوى */
+  z-index: 1000; /* لضمان الظهور فوق المحتوى */
 }
 
 nav ul {
@@ -47,6 +47,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #5865F2; /* اللون عند التمرير */
+  transform: scale(1.1); /* تكبير الرابط عند التمرير */
 }
 
 /* إعدادات المحتوى */
@@ -78,9 +79,21 @@ h2 {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .discord-button:hover {
   background-color: #4752c4;
+  transform: scale(1.1); /* تكبير الزر عند التمرير عليه */
+}
+
+/* إضافة تأثيرات التحميل بين الصفحات */
+body {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
