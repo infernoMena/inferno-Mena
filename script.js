@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const discordBtn = document.querySelector(".discord-btn");
 
   discordBtn.addEventListener("click", function (e) {
-    e.preventDefault(); // عشان مايروحش على طول
-    const go = confirm("هل أنت متحمس؟ 🔥 سيتم تحويلك الآن إلى Discord!");
+    e.preventDefault();
+    const go = confirm("🔥 هل أنت جاهز للانضمام إلى مجتمع Inferno؟");
     if (go) {
-      window.open("https://discord.gg/kyBTtBxf", "_blank");
+      window.open(this.href, "_blank");
     }
   });
 });
