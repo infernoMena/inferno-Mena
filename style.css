@@ -1,25 +1,28 @@
+/* تنسيقات عامة */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 40px;
-  background-color: #f0f0f0;
-  color: #333;
+  padding: 30px;
 }
 
+/* تنسيق الشعار */
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* تنسيق العنوان */
 h1 {
-  color: #007BFF;
+  color: #f90;
+  margin: 20px 0;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+/* تنسيق صورة اللعبة */
+.game-img {
+  width: 500px;
+  border: 2px solid #f90;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f90;
 }
-
-button:hover {
-  background-color: #218838;
-}
-
