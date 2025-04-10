@@ -1,78 +1,119 @@
-/* General */
+/* Global Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: #f4f7f6;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Navbar */
 nav {
-  background-color: #1f1f1f;
-  padding: 1rem;
+  background-color: #1a1a2e;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 nav ul li a {
+  color: white;
+  font-weight: 500;
   text-decoration: none;
-  color: #00ff99;
-  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #fff;
+  color: #00ff99;
 }
 
-/* Main content */
-main {
-  padding: 2rem;
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 70px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #333;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Page background colors */
-.page-home {
-  background-color: #1a1a2e; /* Home Page */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.page-clans {
-  background-color: #2e1a1a; /* Clans Page */
+.input-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.page-ranking {
-  background-color: #1a2e1a; /* Ranking Page */
-}
-
-.page-events {
-  background-color: #1a1a2e; /* Events Page */
-}
-
-.page-downloads {
-  background-color: #2e1a2e; /* Downloads Page */
-}
-
-/* Form and Button Styling */
-input, button {
-  display: block;
-  margin: 10px auto;
-  padding: 10px;
+label {
   font-size: 1rem;
-  border-radius: 5px;
-  border: none;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border: 1px solid #00ff99;
 }
 
 button {
   background-color: #00ff99;
-  color: #000;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #00cc77;
+}
+
+.signup-redirect {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-redirect a {
+  color: #00ff99;
+  text-decoration: none;
+}
+
+.signup-redirect a:hover {
+  text-decoration: underline;
 }
