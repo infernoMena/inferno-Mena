@@ -1,3 +1,4 @@
+/* إعدادات الجسم */
 body {
   margin: 0;
   padding: 0;
@@ -8,16 +9,49 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
-  /* إضافة الصورة كخلفية */
-  background-image: url('images/crossfire-cover.png');
+  background-image: url('images/crossfire-cover.png'); /* الخلفية الشفافة */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+/* إعدادات الشريط العلوي */
+nav {
+  background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ضمان الظهور فوق المحتوى */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5865F2; /* اللون عند التمرير */
+}
+
+/* إعدادات المحتوى */
 .container {
-  background-color: rgba(0, 0, 0, 0.6); /* خلفية نصف شفافة للمحتوى */
+  background-color: rgba(0, 0, 0, 0.6); /* خلفية مظلمة نصف شفافة للمحتوى */
   padding: 30px 20px;
   border-radius: 16px;
   text-align: center;
