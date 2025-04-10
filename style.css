@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* تنسيق الصفحة */
+/* خلفية وتنسيقات الصفحة */
 body {
   background-color: #111;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* صندوق المحتوى */
+/* حاوية المحتوى */
 .container {
   background-color: #1a1a1a;
   padding: 30px;
@@ -27,13 +27,13 @@ body {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-/* ✅ صورة الشعار */
+/* صورة الشعار */
 .logo-img {
   width: 180px;
   margin-bottom: 20px;
 }
 
-/* ✅ صورة الغلاف */
+/* صورة الغلاف */
 .main-image {
   width: 100%;
   max-height: 250px;
@@ -42,7 +42,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* ✅ العناوين */
+/* العناوين */
 h1 {
   margin: 10px 0;
   font-size: 28px;
@@ -55,7 +55,7 @@ h2 {
   color: #ccc;
 }
 
-/* ✅ زر ديسكورد */
+/* زر الديسكورد */
 .discord-btn {
   display: inline-block;
   background-color: #5865F2;
