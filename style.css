@@ -8,14 +8,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/crossfire-cover.png'); /* الصورة كخلفية */
-  background-size: cover; /* لتغطية الشاشة بالكامل */
-  background-position: center; /* لتمركز الصورة في منتصف الشاشة */
-  background-repeat: no-repeat; /* منع تكرار الصورة */
+
+  /* إضافة الصورة كخلفية */
+  background-image: url('images/crossfire-cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.6); /* نصف شفاف عشان يبين محتوى النص */
+  background-color: rgba(0, 0, 0, 0.6); /* خلفية نصف شفافة للمحتوى */
   padding: 30px 20px;
   border-radius: 16px;
   text-align: center;
