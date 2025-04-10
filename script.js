@@ -1,1 +1,2 @@
-console.log("Welcome to Inferno Mena!");
+// You can add future JavaScript here
+console.log("Website Loaded Successfully ✅");
